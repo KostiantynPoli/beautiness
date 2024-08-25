@@ -3,6 +3,7 @@
 
 .discounts {
   background: #edf5f7;
+  padding: 132px 0;
 
   .container {
     display: flex;
@@ -120,6 +121,7 @@
         background: #fff;
         margin-bottom: 15px;
         padding: 21px 15px;
+
         &::placeholder {
           font-family: v.$front-family;
           font-weight: 400;
@@ -129,7 +131,22 @@
           &:before {
             content: url("./../img/user-icon.svg");
           }
+        }
       }
+      textarea{
+        resize: none;
+      }
+      &>a {
+        font-family: v.$front-family;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 125%;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        padding: 23px 0;
+        background: #5c8692;
       }
     }
   }

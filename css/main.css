@@ -536,6 +536,7 @@ header {
 
 .discounts {
   background: #edf5f7;
+  padding: 132px 0;
 }
 .discounts .container {
   display: flex;
@@ -666,6 +667,21 @@ header {
 }
 .discounts .container form input::placeholder:before, .discounts .container form textarea::placeholder:before {
   content: url("./../img/user-icon.svg");
+}
+.discounts .container form textarea {
+  resize: none;
+}
+.discounts .container form > a {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 125%;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  padding: 23px 0;
+  background: #5c8692;
 }
 
 .container {
