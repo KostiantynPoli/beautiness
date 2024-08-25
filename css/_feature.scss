@@ -1,0 +1,46 @@
+@use "_variables" as v;
+
+.feature {
+  background: #fff;
+  padding: 150px 0;
+  .container{
+  display: flex;
+  gap: 87px;
+  box-shadow: 0 37px 60px 0 rgba(0, 0, 0, 0.02);
+  .feature-card{
+    max-width: 330px;
+  }
+  .feature-description{
+    margin-top: 25px;
+    h3 {
+      font-family: v.$second-family;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 120%;
+      color: v.$text-black;
+      margin-bottom: 11px;
+    }
+    p {
+      font-family: v.$front-family;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 165%;
+      letter-spacing: 0.02em;
+      color: #555;
+      padding-bottom: 30px;
+    }
+    a {
+      font-family: v.$front-family;
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 125%;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-align: center;
+      color: v.$text-black;
+      border: 2px solid #5c8692;
+      padding: 18px 43px;
+    }
+   }
+  }
+}

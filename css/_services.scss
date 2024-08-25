@@ -1,0 +1,101 @@
+@use "_variables" as v;
+@use "_mixins" as m;
+
+.services{
+  background: #fff;
+  .container{
+    padding: 146px 0;
+    h4{
+      @include m.h4-title(v.$front-family);
+      text-align: center;
+      margin-bottom: 9px;
+    }
+    h3{
+      @include m.h3-title(v.$second-family, v.$text-black);
+      text-align: center;
+      margin-bottom: 50px   ;
+    }
+    .service-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      position: relative;
+      .photo {
+        display: block;
+        z-index: 3;
+      }
+      .photo.bottom{
+        position: absolute;
+        bottom: -15px;
+        right: -120px;
+
+      }
+
+      .procedures-price.first{
+        margin-top: 30px;
+        position: absolute;
+        top: 14px;
+        right: -70px;
+      }
+      .procedures-price{
+        .procedure-title {
+          font-family: v.$second-family;
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 130%;
+          color: v.$text-black;
+          margin-bottom: 5px;
+
+          .price {
+            font-family: v.$second-family;
+            font-size: 22px;
+            line-height: 130%;
+            color: v.$text-black;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            margin-left: 15px;
+          }
+          .from{
+            @include m.grey-description(v.$front-family);
+            margin-left: 15px;
+          }
+        }
+        .procedure-description{
+          @include m.grey-description(v.$front-family);
+          margin-bottom: 22px;
+        }
+        .separator{
+          border: 1px solid #9bb7bf;
+          max-width: 530px;
+          opacity: 0.5;
+          margin-bottom: 18px;
+        }
+        .appointment {
+          font-family: v.$front-family;
+          font-weight: 800;
+          font-size: 14px;
+          line-height: v.$line-height125;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          text-align: center;
+          color: v.$text-black;
+          border: 2px solid #5c8692;
+          padding: 24px 34px;
+          display: inline-block;
+          margin-top: 17px;
+          margin-bottom: 124px;
+          &:hover{
+            background: v.$main-hover-color;
+          }
+        }
+      }
+      .black-rectangle{
+        position: relative;
+        left: -142px;
+        bottom: -35px;
+        z-index: 1;
+      }
+    }
+  }
+}

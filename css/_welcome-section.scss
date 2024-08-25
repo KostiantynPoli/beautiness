@@ -1,0 +1,67 @@
+@use "_variables" as v;
+@use "_mixins" as m;
+
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .welcome-left{
+    background: #ebf3f5;
+    .welcome-content{
+      padding: 235px 360px;
+      max-width: 508px;
+      h4{
+        @include m.h4-title(v.$front-family);
+        margin-bottom: 7px;
+        &:before{
+          content: url("./../img/exclamation.svg");
+          margin-right: 9px;
+        }
+      }
+      h1{
+        font-family: v.$front-family;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 115%;
+        letter-spacing: -0.01em;
+        color: v.$text-black;
+        margin-bottom: 24px;
+      }
+      p{
+        font-family: v.$front-family;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 170%;
+        color: #555;
+        margin-bottom: 34px;
+      }
+      a{
+        font-family: v.$front-family;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: v.$line-height125;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        padding: 24px 36px;
+        background: #5c8692;
+      }
+    }
+  }
+  .welcome-right{
+    background: #1e2c30;
+    .img-border{
+      border: 10px solid #fff;
+      width: 561px;
+      height: 663px;
+      img{
+        border: 1px solid #000;
+        width: 550px;
+        height: 545px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        background: #a2b3bf;
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+@use "variables" as v;
+
+header{
+  width: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 38px 60px;
+}
+
+.logo-and-phone {
+  .main-logo{
+    font-family: v.$front-family;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: v.$line-height125;
+    color: v.$text-black;
+    margin-right: 46px;
+    img {
+      margin-right: 12px;
+    }
+  }
+  .phone{
+    font-family: v.$front-family;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: v.$line-height125;
+    letter-spacing: -0.01em;
+    color: v.$text-black;
+    &:before{
+      content: url("./../img/phone.svg");
+      margin-right: 12px;
+    }
+  }
+
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    margin-right: 32px;
+    li{
+      a {
+        font-family: v.$front-family;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: v.$line-height125;
+        color: #555;
+      }
+      .drop-down {
+        &:after {
+          content: url("./../img/arrow-down.svg");
+          margin-left: 5px;
+          }
+        }
+    }
+
+  }
+  .social-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-right: 32px;
+  }
+  .reservation{
+    font-family: v.$front-family;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: v.$line-height125;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    padding: 16px 33px;
+    background: #7a9ca5;
+    &:before {
+      content: url("./../img/calendar-icon.svg");
+      margin-right: 12px;
+    }
+  }
+}
