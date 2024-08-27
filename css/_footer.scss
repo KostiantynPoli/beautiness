@@ -1,0 +1,67 @@
+@use "_variables" as v;
+@use "_mixins" as m;
+
+footer{
+  background: #1e2c30;
+  padding: 66px 0;
+  .container{
+    .logo-container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo{
+        font-family: v.$second-family;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 125%;
+        letter-spacing: 0.02em;
+        color: #fff;
+        img {
+          margin-right: 18px;
+        }
+      }
+      .social-media{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        .social-link{
+          border: 2px solid #5c8692;
+          width: 55px;
+          height: 55px;
+          &:hover {
+            border: 2px solid #4bc3e3;
+          }
+          &:hover svg>path{
+            fill: #4bc3e3;
+          }
+          //a{
+          //  padding: 21px 16px 21px 17px;
+          //}
+        }
+
+      }
+    }
+    .separator-footer{
+      border: 1px solid #fff;
+      width: 1200px;
+      opacity: 0.15;
+      margin: 52px 0;
+    }
+  }
+  .container.copyright {
+    background: #111e22;
+    p{
+      font-family: "Font Awesome 5 Free", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 200%;
+      letter-spacing: -0.01em;
+      text-align: center;
+      color: #fff;
+    }
+  }
+
+
+
+}

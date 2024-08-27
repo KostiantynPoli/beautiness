@@ -14,7 +14,7 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding-top: 87px;
+      padding: 87px 0;
 
       h4 {
         @include m.h4-title(v.$front-family);
@@ -112,15 +112,30 @@
       box-shadow: 0 20px 40px 0 rgba(42, 68, 75, 0.13);
       background: #fff;
       padding: 66px 75px;
-      max-width: 550px;
+      position: relative;
+      //max-width: 550px;
       display: flex;
       flex-direction: column;
+      .input-container-name{
+        @include m.discount-input("./../img/user-icon.svg")
+      }
+      .input-container-email{
+        @include m.discount-input("./../img/envelop-icon.svg")
+      }
+      .input-container-phone{
+        @include m.discount-input("./../img/phone-icon.svg")
+      }
+      .input-container-service{
+        @include m.discount-input("./../img/open-book-icon.svg")
+      }
+      .input-container-note{
+        @include m.discount-input("./../img/list-and-pen-icon.svg")
+      }
       input, textarea {
         border: 1px solid #5c8692;
-        max-width: 400px;
-        background: #fff;
-        margin-bottom: 15px;
-        padding: 21px 15px;
+        width: 100%;
+        height: 100%;
+        padding: 21px 0 21px 45px;
 
         &::placeholder {
           font-family: v.$front-family;
@@ -128,15 +143,13 @@
           font-size: 18px;
           line-height: 160%;
           color: #555;
-          &:before {
-            content: url("./../img/user-icon.svg");
-          }
         }
       }
       textarea{
         resize: none;
       }
       &>a {
+        width: 400px;
         font-family: v.$front-family;
         font-weight: 800;
         font-size: 14px;
@@ -147,7 +160,10 @@
         color: #fff;
         padding: 23px 0;
         background: #5c8692;
+        &:hover{
+            background: v.$main-hover-color;
+          }
+        }
       }
     }
   }
-}

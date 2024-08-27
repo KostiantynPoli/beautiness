@@ -27,3 +27,17 @@
   letter-spacing: 0.02em;
   color: #555;
 }
+
+@mixin discount-input($urlToImg){
+  position: relative;
+  width: 400px;
+  margin-bottom: 15px;
+
+  &:before{
+    content: url( $urlToImg);
+    position: absolute;
+    top: 32px;
+    left: 15px;
+    transform: translateY(-50%);
+  }
+}

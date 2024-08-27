@@ -40,6 +40,9 @@
       color: v.$text-black;
       border: 2px solid #5c8692;
       padding: 18px 43px;
+      &:hover{
+        background: v.$main-hover-color;
+      }
     }
    }
   }
