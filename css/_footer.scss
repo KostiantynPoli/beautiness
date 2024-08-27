@@ -10,14 +10,18 @@ footer{
       justify-content: space-between;
       align-items: center;
       .logo{
-        font-family: v.$second-family;
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 125%;
-        letter-spacing: 0.02em;
-        color: #fff;
+        display: flex;
+        align-items: center;
         img {
           margin-right: 18px;
+        }
+        span{
+          font-family: v.$second-family;
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 125%;
+          letter-spacing: 0.02em;
+          color: #fff;
         }
       }
       .social-media{
@@ -47,6 +51,41 @@ footer{
       width: 1200px;
       opacity: 0.15;
       margin: 52px 0;
+    }
+    .footer-navigation-container{
+      display: flex;
+      justify-content: space-between;
+      .navigation-column{
+        h3{
+          font-family: v.$second-family;
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 140%;
+          color: #fff;
+          margin-bottom: 21px;
+        }
+        ul a {
+          @include m.navigation-item();
+
+          &:hover {
+            color: v.$main-hover-color;
+          }
+        }
+        ul>li {
+            @include m.navigation-item();
+          }
+        .address-item {
+          width: 324px;
+          display: flex;
+          justify-content: space-between;
+          span{
+            padding-right: 14px;
+          }
+        }
+
+
+
+      }
     }
   }
   .container.copyright {

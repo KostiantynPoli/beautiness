@@ -870,15 +870,19 @@ footer .container .logo-container {
   align-items: center;
 }
 footer .container .logo-container .logo {
+  display: flex;
+  align-items: center;
+}
+footer .container .logo-container .logo img {
+  margin-right: 18px;
+}
+footer .container .logo-container .logo span {
   font-family: "Playfair Display", sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 125%;
   letter-spacing: 0.02em;
   color: #fff;
-}
-footer .container .logo-container .logo img {
-  margin-right: 18px;
 }
 footer .container .logo-container .social-media {
   display: flex;
@@ -902,6 +906,47 @@ footer .container .separator-footer {
   width: 1200px;
   opacity: 0.15;
   margin: 52px 0;
+}
+footer .container .footer-navigation-container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .footer-navigation-container .navigation-column h3 {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 140%;
+  color: #fff;
+  margin-bottom: 21px;
+}
+footer .container .footer-navigation-container .navigation-column ul a {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 200%;
+  letter-spacing: -0.01em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+footer .container .footer-navigation-container .navigation-column ul a:hover {
+  color: #4bc3e3;
+}
+footer .container .footer-navigation-container .navigation-column ul > li {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 200%;
+  letter-spacing: -0.01em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+footer .container .footer-navigation-container .navigation-column .address-item {
+  width: 324px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .footer-navigation-container .navigation-column .address-item span {
+  padding-right: 14px;
 }
 footer .container.copyright {
   background: #111e22;
