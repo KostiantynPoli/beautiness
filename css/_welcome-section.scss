@@ -27,7 +27,7 @@
     transform: translate(-50%, -50%);
     z-index: 3;
     .welcome-content {
-
+      margin-right: 70px;
       width: 508px;
 
       h4 {
@@ -77,9 +77,13 @@
       }
     }
     .img-border {
-      border: 10px solid #fff;
+      border-top: 10px solid #fff;
+      border-bottom: 10px solid #fff;
+      border-right: 10px solid #fff;
       width: 561px;
       height: 663px;
+      position: relative;
+      right: 4px;
       img {
         border: 1px solid #000;
         width: 550px;
@@ -87,6 +91,9 @@
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
         background: #a2b3bf;
         margin: 59px 0;
+        position: absolute;
+        left: -66px;
+
       }
     }
   }
